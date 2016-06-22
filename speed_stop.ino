@@ -82,7 +82,7 @@ void loop() {
   int switchState = digitalRead(2);
   
   if(switchState == HIGH) {
-    if(digitalRead(9) == HIGH) 
+    if(LED_ON == 9) 
       success_blink();
     else
        fail_blink();
